@@ -1,0 +1,48 @@
+.botao-estilizado {
+    -fx-background-color: #B834B8;
+    background-color: #B834B8;
+    -fx-text-fill: #FBDEFF;
+    -fx-font-size: 11pt;
+    font-size: 11pt;
+    -fx-font-weight: bolder;
+    font-weight: bolder;
+    -fx-background-radius: 20;
+    -fx-cursor: hand;
+    cursor: hand;
+}
+
+.botao-estilizado:hover {
+    -fx-background-color: #641271;
+    background-color: #641271;
+    -fx-text-fill: white;
+}
+
+.radio-button {
+    -fx-font-family: "Arial Black";
+    font-family: "Arial Black";
+    -fx-font-size: 12.0;
+    font-size: 12.0;
+    -fx-text-fill: white;
+    -fx-border-color: transparent;
+    border-color: transparent;
+}
+
+.radio-button:selected {
+    -fx-background-color: #820BC6;
+    background-color: #820BC6;
+    -fx-border-color: transparent;
+    border-color: transparent;
+    -fx-background-radius: 20;
+    -fx-text-fill: white;
+    -fx-padding: 2;
+    padding: 2;
+}
+
+.choice-box {
+    -fx-background-color: #FFABFF;
+    background-color: #FFABFF;
+    -fx-text-fill: white;
+    -fx-background-radius: 5;
+    -fx-border-color: transparent;
+    border-color: transparent;
+}
