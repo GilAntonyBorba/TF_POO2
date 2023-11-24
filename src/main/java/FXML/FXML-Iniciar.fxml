@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ProgressBar?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="829.0" prefWidth="1530.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controllers.ControllerIniciar">
+   <children>
+   		<!-- Imagem de Fundo -->
+		<ImageView fitHeight="829.0" fitWidth="1530.0">
+			<image>
+				<Image url="@../img/cenario.png" /> 
+			</image>
+		</ImageView>
+      <!-- Primeira imagem -->
+      <ImageView fx:id="myImageView" fitHeight="325.0" fitWidth="177.0" layoutX="137.0" layoutY="491.0" pickOnBounds="true" preserveRatio="true" />
+      
+      <!-- Segunda imagem -->
+      <ImageView fx:id="mySecondImageView" fitHeight="325.0" fitWidth="177.0" layoutX="1216.0" layoutY="491.0" nodeOrientation="RIGHT_TO_LEFT" pickOnBounds="true" preserveRatio="true" />
+      <!-- Imagem do Poder -->
+	<ImageView fx:id="powerImageView" fitHeight="150" fitWidth="100.0" layoutX="0.0" layoutY="0.0" pickOnBounds="true" preserveRatio="true" visible="false" />
+	<ImageView fx:id="powerSecondImageView" fitHeight="150" fitWidth="100.0" layoutX="0.0" layoutY="0.0" nodeOrientation="RIGHT_TO_LEFT" pickOnBounds="true" preserveRatio="true" visible="false" />
+      <ProgressBar fx:id="myProgressBar" layoutX="275.0" layoutY="14.0" prefHeight="38.0" prefWidth="322.0" progress="1.0" />
+      <Label fx:id="myLabelLife" layoutX="408.0" layoutY="15.0" text="Label">
+         <font>
+            <Font size="24.0" />
+         </font>
+      </Label>
+      <ProgressBar fx:id="myProgressBar1" layoutX="841.0" layoutY="14.0" prefHeight="38.0" prefWidth="322.0" progress="1.0" />
+      <Label fx:id="myLabelLife1" layoutX="974.0" layoutY="15.0" text="Label">
+         <font>
+            <Font size="24.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>

@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.CheckBox?>
+<?import javafx.scene.control.ChoiceBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.RadioButton?>
+<?import javafx.scene.control.ToggleGroup?>
+<?import javafx.scene.effect.Glow?>
+<?import javafx.scene.effect.Lighting?>
+<?import javafx.scene.effect.Shadow?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.paint.Color?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controllers.ControllerCadastrar">
+   <children>
+      <ImageView fitHeight="400.0" fitWidth="600.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../img/fundo.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="252.0" fitWidth="260.0" layoutX="28.0" layoutY="131.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../img/simbolo.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="374.0" fitWidth="48.0" layoutX="281.0" layoutY="13.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../img/avengers.png" />
+         </image>
+         <effect>
+            <Lighting>
+               <bumpInput>
+                  <Shadow blurType="TWO_PASS_BOX" height="15.8725" radius="6.520625000000001" width="12.21">
+                     <color>
+                        <Color red="0.42105263471603394" green="0.41910332441329956" blue="0.41910332441329956" />
+                     </color>
+                  </Shadow>
+               </bumpInput>
+            </Lighting>
+         </effect>
+      </ImageView>
+      <ImageView fitHeight="364.0" fitWidth="241.0" layoutX="340.0" layoutY="22.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../img/fundo_rosa.png" />
+         </image>
+      </ImageView>
+      <Button fx:id="btnVoltar" layoutX="84.0" layoutY="38.0" mnemonicParsing="false" onAction="#scenePrincipal" prefHeight="50.0" prefWidth="120.0" styleClass="botao-estilizado" text="Voltar" textFill="WHITE">
+         <font>
+            <Font name="Calibri Bold" size="25.0" />
+         </font></Button>
+      <Text fill="WHITE" layoutX="352.0" layoutY="70.0" strokeType="OUTSIDE" strokeWidth="0.0" text="SELECIONE" textAlignment="CENTER" wrappingWidth="214.0">
+         <font>
+            <Font name="Calibri Bold" size="39.0" />
+         </font>
+         <effect>
+            <Glow level="0.5" />
+         </effect>
+      </Text>
+      <RadioButton fx:id="radioHeroi" layoutX="388.0" layoutY="94.0" mnemonicParsing="false" onAction="#changeArray" styleClass="radio-button" text="Herói" textFill="WHITE">
+         <font>
+            <Font name="Arial Black" size="12.0" />
+         </font>
+         <toggleGroup>
+            <ToggleGroup fx:id="mutante" />
+         </toggleGroup>
+      </RadioButton>
+      <RadioButton fx:id="radioVilao" layoutX="479.0" layoutY="94.0" mnemonicParsing="false" onAction="#changeArray" styleClass="radio-button" text="Vilão" textFill="WHITE" toggleGroup="$mutante">
+         <font>
+            <Font name="Arial Black" size="12.0" />
+         </font>
+      </RadioButton>
+      <ChoiceBox fx:id="choicePersonagem" layoutX="384.0" layoutY="128.0" prefWidth="150.0" styleClass="choice-box" />
+      <ChoiceBox fx:id="choicePoder" layoutX="384.0" layoutY="195.0" prefWidth="150.0" />
+      <CheckBox fx:id="checkVoar" layoutX="422.0" layoutY="255.0" mnemonicParsing="false" text="Pode voar" textFill="WHITE" />
+      <Button fx:id="btnSalvar" layoutX="386.0" layoutY="298.0" mnemonicParsing="false" onAction="#salvarCadastro" prefHeight="50.0" prefWidth="150.0" styleClass="botao-estilizado" text="Salvar" textAlignment="CENTER" textFill="WHITE">
+         <font>
+            <Font name="Calibri Bold" size="25.0" />
+         </font>
+      </Button>
+      <Label layoutX="384.0" layoutY="165.0" text="Qual seu poder?" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </Label>
+      <Label fx:id="cadastrado" alignment="CENTER" contentDisplay="CENTER" layoutX="349.0" layoutY="350.0" prefHeight="20.0" prefWidth="224.0" textFill="#22f21b">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>
